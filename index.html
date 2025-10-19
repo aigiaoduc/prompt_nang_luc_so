@@ -195,22 +195,32 @@ File Kế hoạch dạy học đính kèm có tên là **\`${fileName}\`**. Hãy
                                 Trợ lý Năng lực số
                             </h1>
                             <p className="text-dark-blue mt-2 text-xl">Tạo prompt tích hợp NLS cho kế hoạch dạy học.</p>
-                            <div className="flex justify-center items-center space-x-4">
+                            <div className="mt-6 flex flex-wrap justify-center items-center gap-4">
                                 <a 
                                     href="https://kontum01-my.sharepoint.com/:f:/g/personal/quanth_c12sb_st_gdkontum_edu_vn/EuuHrh0ngWZEjhwtFRLyUa0B8pu7N9edZhyJvIy8Skh4SA?e=4fxnRr"
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="inline-block mt-6 p-2 bg-light-green border-2 border-black font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none active:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
+                                    className="inline-block p-2 bg-light-green border-2 border-black font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none active:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
                                 >
-                                    Tải Tài liệu Hướng dẫn
+                                    Tải Tài liệu
                                 </a>
                                 <a 
                                     href="https://ung-ho-tac-gia.netlify.app/"
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="inline-block mt-6 p-2 bg-light-yellow border-2 border-black font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none active:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
+                                    className="inline-block p-2 bg-light-yellow border-2 border-black font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none active:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
                                 >
                                     Donate
+                                </a>
+                                <a 
+                                    href="#video-guide"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        document.getElementById('video-guide')?.scrollIntoView({ behavior: 'smooth' });
+                                    }}
+                                    className="inline-block p-2 bg-dark-blue text-white border-2 border-black font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none active:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
+                                >
+                                    Video Hướng dẫn
                                 </a>
                             </div>
                         </header>
@@ -335,6 +345,23 @@ File Kế hoạch dạy học đính kèm có tên là **\`${fileName}\`**. Hãy
                                     <p>2. Mở AI (ChatGPT, Gemini...), dán prompt vào.</p>
                                     <p>3. Đính kèm file Kế hoạch dạy học và gửi đi.</p>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div id="video-guide" className="bg-white border-2 border-black rounded-xl shadow-[8px_8px_0px_#000000] p-6 sm:p-8 mt-12">
+                             <h2 className="text-3xl font-bold mb-6 text-black flex items-center">
+                                <span className="bg-light-yellow text-black border-2 border-black rounded-full h-10 w-10 flex items-center justify-center mr-4 font-mono text-xl">4</span>
+                                Video Hướng dẫn
+                            </h2>
+                            <div className="rounded-lg overflow-hidden border-2 border-black">
+                                <iframe 
+                                    className="w-full h-[560px]"
+                                    src="https://www.youtube.com/embed/iHMYNYoPcPA" 
+                                    title="YouTube video player" 
+                                    frameBorder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowFullScreen>
+                                </iframe>
                             </div>
                         </div>
                         
