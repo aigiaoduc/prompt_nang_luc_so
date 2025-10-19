@@ -60,25 +60,29 @@
                     const p1 = `Tạo **PHỤ LỤC 1: TÍCH HỢP NĂNG LỰC SỐ VÀO KẾ HOẠCH DẠY HỌC (Dành cho Tổ chuyên môn)**
 
 **Bối cảnh:**
-Bạn là một chuyên gia giáo dục Việt Nam, am hiểu sâu sắc Chương trình GDPT 2018. Nhiệm vụ của bạn là hỗ trợ Tổ chuyên môn môn **\`${subject}\`** xây dựng một phụ lục tích hợp Năng lực số (NLS), trong đó **diễn giải chi tiết** hoạt động thực tế để hình thành NLS cho học sinh khối **\`${selectedGrades}\`**.
+Bạn là chuyên gia giáo dục Việt Nam, am hiểu sâu sắc Chương trình GDPT 2018. Nhiệm vụ của bạn là hỗ trợ Tổ chuyên môn môn **\`${subject}\`** xây dựng một phụ lục tích hợp Năng lực số (NLS), trong đó **diễn giải chi tiết** hoạt động thực tế để hình thành NLS cho học sinh khối **\`${selectedGrades}\`**.
 
 **Tài liệu nguồn (BẮT BUỘC):**
-1.  **\`Thông tư 02/2025/TT-BGDĐT\` (Khung NLS):** Tài liệu gốc để hiểu bản chất năng lực.
-2.  **\`Công văn 405/SGDĐT-GDTrH Quảng Ngãi\`:** Tài liệu định hướng để xác định **MỨC ĐỘ** năng lực.
-    *   **Lớp 6, 7:** Ưu tiên mức **"Trung cấp 1"** (cột L6-L7 trong Phụ lục CV405).
-    *   **Lớp 8, 9:** Ưu tiên mức **"Trung cấp 2"** (cột L8-L9 trong Phụ lục CV405).
+1.  **\`Thông tư 02/2025/TT-BGDĐT\` (Khung NLS):** Tài liệu gốc để hiểu bản chất của từng năng lực.
+2.  **\`Công văn 405/SGDĐT-GDTrH Quảng Ngãi\`:** Đây là tài liệu định hướng để xác định **MỨC ĐỘ** năng lực phù hợp cho từng khối lớp, được quy định rõ trong Phụ lục đính kèm Công văn 405. Cụ thể:
+    *   **Lớp 1, 2:** Ưu tiên mức **"Cơ bản 1"** (tương ứng cột L1-L2).
+    *   **Lớp 3, 4, 5:** Ưu tiên mức **"Cơ bản 2"** (tương ứng cột L3-L4-L5).
+    *   **Lớp 6, 7:** Ưu tiên mức **"Trung cấp 1"** (tương ứng cột L6-L7).
+    *   **Lớp 8, 9:** Ưu tiên mức **"Trung cấp 2"** (tương ứng cột L8-L9).
+    *   **Lớp 10, 11, 12:** Ưu tiên mức **"Nâng cao 1"** (tương ứng cột L10-L11-L12).
+    *   *Lưu ý: Có thể linh hoạt sử dụng mức độ cao hơn nếu nội dung bài học đòi hỏi.*
 3.  **\`${fileName}\` (Kế hoạch dạy học đính kèm):** Tài liệu chính để phân tích nội dung bài học.
 
 **Yêu cầu chi tiết về quy trình (CỰC KỲ QUAN TRỌNG):**
 
-1.  **Phân tích KHDH:** Từ file **\`${fileName}\`**, xác định các tiết học (PP) có nội dung phù hợp để tích hợp NLS.
+1.  **Phân tích KHDH:** Từ file **\`${fileName}\`**, xác định các tiết học (PP) phù hợp để tích hợp NLS.
 2.  **Xác định NLS và CHỈ BÁO:**
-    *   Với mỗi tiết học đã chọn, hãy tìm đến Năng lực thành phần tương ứng trong Thông tư 02 (ví dụ: 1.1).
-    *   Dựa vào định hướng mức độ của Công văn 405 (TC1 hoặc TC2), hãy xác định đúng cột mức độ trong bảng mô tả của Thông tư 02.
-    *   Trong cột đó, có nhiều **chỉ báo được đánh dấu bằng gạch đầu dòng (-)**. Bạn phải **chọn ra MỘT chỉ báo (một gạch đầu dòng)** cụ thể, phù hợp nhất với hoạt động dạy học. Ví dụ, trong cột Trung cấp 1 của Năng lực 1.1, có thể có các chỉ báo: "- Giải thích được nhu cầu thông tin", "- Thực hiện được rõ ràng và theo quy trình các tìm kiếm...". Bạn phải chọn một trong số đó.
+    *   Với mỗi tiết học đã chọn, tìm đến Năng lực thành phần tương ứng trong Thông tư 02 (ví dụ: 1.1).
+    *   Dựa vào định hướng mức độ cho khối **\`${selectedGrades}\`** từ Công văn 405, xác định đúng cột mức độ trong bảng mô tả của Thông tư 02.
+    *   Trong cột đó, có nhiều **chỉ báo được đánh dấu bằng gạch đầu dòng (-)**. Bạn phải **chọn ra MỘT chỉ báo (một gạch đầu dòng)** cụ thể, phù hợp nhất với hoạt động dạy học.
 3.  **DIỄN GIẢI HOẠT ĐỘNG THỰC TẾ:**
     *   Đây là yêu cầu then chốt. Dựa trên chỉ báo đã chọn, hãy **diễn giải nó thành một hoạt động học tập cụ thể, sinh động, gắn chặt với bài học của tiết đó**.
-    *   **Ví dụ:** Nếu chọn chỉ báo "- Giải thích được nhu cầu thông tin" cho bài "Chạy cự li ngắn", bạn phải diễn giải thành: **"TC 1.1.a: HS được giao nhiệm vụ tìm kiếm video về 'kỹ thuật chạy giữa quãng 60m' để hiểu rõ hơn về cách duy trì tốc độ."** (Lưu ý: "a" ở đây chỉ là ký hiệu cho chỉ báo đầu tiên bạn chọn).
+    *   **Ví dụ (Lớp 6):** Nếu chọn chỉ báo "- Giải thích được nhu cầu thông tin" cho bài "Chạy cự li ngắn", bạn phải diễn giải thành: **"TC 1.1.a: HS được giao nhiệm vụ tìm kiếm video về 'kỹ thuật chạy giữa quãng 60m' để hiểu rõ hơn về cách duy trì tốc độ."**
 4.  **Trình bày kết quả:**
     *   Ghi kết quả vào bảng theo định dạng yêu cầu.
     *   Phần "Năng lực số hình thành" phải bắt đầu bằng mã viết tắt (CB, TC, NC, CS) + mã năng lực + ký hiệu chỉ báo (a,b,c...), theo sau là phần diễn giải thực tế.
@@ -103,21 +107,24 @@ File Kế hoạch dạy học đính kèm có tên là **\`${fileName}\`**. Hãy
                     const p3 = `Tạo **PHỤ LỤC 3: NĂNG LỰC SỐ CẦN HÌNH THÀNH TRONG MÔN HỌC (Dành cho Kế hoạch giáo dục của giáo viên)**
 
 **Bối cảnh:**
-Bạn là một chuyên gia giáo dục Việt Nam. Nhiệm vụ của bạn là hỗ trợ tôi, một giáo viên môn **\`${subject}\`**, xây dựng một phụ lục đính kèm Kế hoạch giáo dục cá nhân. Phụ lục này yêu cầu **trích dẫn nguyên văn và chính xác tuyệt đối** các chỉ báo năng lực số (NLS) được hình thành trong năm học, đối sánh trực tiếp với các văn bản pháp quy.
+Bạn là chuyên gia giáo dục Việt Nam. Nhiệm vụ của bạn là hỗ trợ tôi, một giáo viên môn **\`${subject}\`**, xây dựng một phụ lục đính kèm Kế hoạch giáo dục cá nhân. Phụ lục này cần **trích dẫn nguyên văn và chính xác tuyệt đối** các chỉ báo năng lực số (NLS) được hình thành trong năm học.
 
 **Tài liệu nguồn (BẮT BUỘC):**
 1.  **\`Thông tư 02/2025/TT-BGDĐT\` (Khung NLS):** Tài liệu gốc để tra cứu và **sao chép nguyên văn** mô tả của từng chỉ báo.
-2.  **\`Công văn 405/SGDĐT-GDTrH Quảng Ngãi\`:** Tài liệu định hướng để xác định **MỨC ĐỘ** năng lực.
-    *   **Lớp 6, 7:** Ưu tiên mức **"Trung cấp 1"** (cột L6-L7 trong Phụ lục CV405).
-    *   **Lớp 8, 9:** Ưu tiên mức **"Trung cấp 2"** (cột L8-L9 trong Phụ lục CV405).
+2.  **\`Công văn 405/SGDĐT-GDTrH Quảng Ngãi\`:** Đây là tài liệu định hướng để xác định **MỨC ĐỘ** năng lực phù hợp cho từng khối lớp, được quy định rõ trong Phụ lục đính kèm Công văn 405. Cụ thể:
+    *   **Lớp 1, 2:** Ưu tiên mức **"Cơ bản 1"** (tương ứng cột L1-L2).
+    *   **Lớp 3, 4, 5:** Ưu tiên mức **"Cơ bản 2"** (tương ứng cột L3-L4-L5).
+    *   **Lớp 6, 7:** Ưu tiên mức **"Trung cấp 1"** (tương ứng cột L6-L7).
+    *   **Lớp 8, 9:** Ưu tiên mức **"Trung cấp 2"** (tương ứng cột L8-L9).
+    *   **Lớp 10, 11, 12:** Ưu tiên mức **"Nâng cao 1"** (tương ứng cột L10-L11-L12).
 3.  **\`${fileName}\` (Kế hoạch dạy học đính kèm):** Tài liệu chính để phân tích nội dung bài học.
 
 **Yêu cầu chi tiết về quy trình (CỰC KỲ QUAN TRỌNG):**
 
 1.  **Phân tích KHDH:** Từ file **\`${fileName}\`**, xác định các tiết học (PP) phù hợp để tích hợp NLS.
 2.  **Xác định NLS và CHỈ BÁO:**
-    *   Với mỗi tiết học đã chọn, hãy tìm đến Năng lực thành phần tương ứng trong Thông tư 02 (ví dụ: 1.1).
-    *   Dựa vào định hướng mức độ của Công văn 405, xác định đúng cột mức độ trong bảng mô tả của Thông tư 02.
+    *   Với mỗi tiết học đã chọn, tìm đến Năng lực thành phần tương ứng trong Thông tư 02 (ví dụ: 1.1).
+    *   Dựa vào định hướng mức độ cho khối **\`${selectedGrades}\`** từ Công văn 405, xác định đúng cột mức độ trong bảng mô tả của Thông tư 02.
     *   Trong cột đó, bạn phải **chọn ra MỘT chỉ báo (nội dung của một gạch đầu dòng "-")** cụ thể, phù hợp nhất với hoạt động dạy học.
 3.  **TRÍCH DẪN NGUYÊN VĂN:**
     *   Đây là yêu cầu then chốt. Bạn phải **sao chép chính xác từng từ** của chỉ báo đã chọn từ Thông tư 02 vào bảng kết quả. **TUYỆT ĐỐI KHÔNG** diễn giải, tóm tắt hay thay đổi bất kỳ từ ngữ nào.
